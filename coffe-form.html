@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <Style>
+    p{ 
+      font-weight: bolder;
+      font-size: large;
+      color: blue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    form{color:rgb(68, 68, 180)
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: :left;
+
+    }
+
+  </Style>
+    
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Coffeform</title>
+
+</head>
+
+<body >
+  <div class="container">
+<P>what kind of coffe do you like?</P>
+  <form action="/coffe_type.php">
+    <div class="custom-control1 custom-radio">
+      <br>
+      <input type="radio" class="custom-control-input" id="defaultRadio1" name="turkish">
+       <label class="custom-control-label" for="defaultRadio1">turkish coffee $3</label>
+       <br>
+      
+      <input type="radio" id="defaultRadio2" name="American">
+      <label class="custom-control-label" for="defaultRadio2">American coffe $5</label>>
+      <br>
+     
+      <input type="radio" id="defaultRadio3" name="Iced latte">
+      <label class="custom-control-label" for="defaultRadio3">Iced latte $7</label>
+      <br>
+      </div>
+  </form>
+  <br>
+  <P>whould you like any extra?</P>
+  <form action="coffe-extras.php">
+      <div class="custom-control custom-checkbox ">
+        <br>
+        <input type="checkbox" class="custom-control-input" id="customCheck1" name="extra coffe">
+        <label class="custom-control-label" for="customCheck1">Extra Coffe</label>
+        <br>
+        <input type="checkbox" class="custom-control-input" id="customCheck2" name="whippedcream">
+        <label class="custom-control-label" for="customCheck2">Whippedcream</label>
+        <br>
+        <input type="checkbox" class="custom-control-input" id="customCheck3" name="caramel">
+        <label class="custom-control-label" for="customCheck3">Extra Caramel </label>
+        <br>
+      </div>
+    </form>
+    <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+  </div>
+</body>
